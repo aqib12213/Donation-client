@@ -1,0 +1,241 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-03-31 09:29+0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ru\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/data/sidebar-data.ts:151
+msgid "Account"
+msgstr "Account"
+
+#: src/routes/index.tsx:233
+msgid "Actions"
+msgstr "Karwaiyan"
+
+#: src/components/data/sidebar-data.ts:156
+msgid "Appearance"
+msgstr "Appearance"
+
+#: src/components/data/sidebar-data.ts:80
+msgid "Auth"
+msgstr "Auth"
+
+#: src/routes/index.tsx:82
+msgid "Churn Rate"
+msgstr "Churn ki sharah"
+
+#: src/routes/index.tsx:100
+msgid "Contractor Name"
+msgstr "Thekedar ka naam"
+
+#: src/components/data/sidebar-data.ts:77
+#~ msgid "Currencies"
+#~ msgstr "Currencies"
+
+#: src/components/data/sidebar-data.ts:65
+msgid "Customers"
+msgstr "Customers"
+
+#: src/components/data/sidebar-data.ts:55
+#: src/routes/index.tsx:114
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: src/components/data/sidebar-data.ts:166
+msgid "Display"
+msgstr "Display"
+
+#: src/routes/index.tsx:102
+#: src/routes/index.tsx:229
+msgid "Edit"
+msgstr "Edit"
+
+#: src/routes/index.tsx:286
+msgid "Efficiency Alert"
+msgstr "Karkardagi ka intibah"
+
+#: src/components/data/sidebar-data.ts:42
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: src/components/data/sidebar-data.ts:106
+msgid "Errors"
+msgstr "Errors"
+
+#: src/routes/index.tsx:149
+msgid "Financial overview for the current fiscal period."
+msgstr "Mojooda mali muddat ka mali jaiza."
+
+#: src/components/data/sidebar-data.ts:115
+msgid "Forbidden"
+msgstr "Forbidden"
+
+#: src/components/data/sidebar-data.ts:96
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+#: src/components/data/sidebar-data.ts:52
+msgid "General"
+msgstr "General"
+
+#: src/components/data/sidebar-data.ts:173
+msgid "Help Center"
+msgstr "Help Center"
+
+#: src/routes/index.tsx:125
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#: src/routes/index.tsx:277
+msgid "Insights"
+msgstr "Baseeratain"
+
+#: src/components/data/sidebar-data.ts:125
+msgid "Internal Server Error"
+msgstr "Internal Server Error"
+
+#: src/components/data/sidebar-data.ts:60
+msgid "Items"
+msgstr "Items"
+
+#: src/routes/index.tsx:83
+msgid "Last 30 days"
+msgstr "Guzishta 30 din"
+
+#: src/routes/index.tsx:52
+msgid "Last 60 days"
+msgstr "Guzishta 60 din"
+
+#: src/components/data/sidebar-data.ts:130
+msgid "Maintenance Error"
+msgstr "Maintenance Error"
+
+#: src/routes/index.tsx:223
+msgid "Name"
+msgstr "Naam"
+
+#: src/routes/index.tsx:67
+msgid "New Customers"
+msgstr "Naye gahak"
+
+#: src/components/data/sidebar-data.ts:120
+msgid "Not Found"
+msgstr "Not Found"
+
+#: src/components/data/sidebar-data.ts:161
+#: src/routes/index.tsx:133
+msgid "Notifications"
+msgstr "Ittilaat"
+
+#: src/components/data/sidebar-data.ts:139
+msgid "Other"
+msgstr "Other"
+
+#: src/components/data/sidebar-data.ts:100
+msgid "OTP"
+msgstr "OTP"
+
+#: src/components/data/sidebar-data.ts:77
+msgid "Pages"
+msgstr "Pages"
+
+#: src/components/data/sidebar-data.ts:146
+msgid "Profile"
+msgstr "Profile"
+
+#: src/routes/index.tsx:300
+msgid "Projected Growth"
+msgstr "Mutawaqqa taraqqi"
+
+#: src/routes/index.tsx:206
+msgid "Recent Transactions"
+msgstr "Haalia lain den"
+
+#: src/routes/index.tsx:124
+msgid "Search"
+msgstr "Talaash"
+
+#: src/routes/index.tsx:126
+msgid "Search for something..."
+msgstr "Kuch talaash karein..."
+
+#: src/components/data/sidebar-data.ts:185
+#~ msgid "Seed Data"
+#~ msgstr "Seed Data"
+
+#: src/components/data/sidebar-data.ts:142
+msgid "Settings"
+msgstr "Settings"
+
+#: src/components/data/sidebar-data.ts:84
+msgid "Sign In"
+msgstr "Sign In"
+
+#: src/components/data/sidebar-data.ts:88
+msgid "Sign In (2 Col)"
+msgstr "Sign In (2 Col)"
+
+#: src/components/data/sidebar-data.ts:92
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: src/components/data/sidebar-data.ts:47
+msgid "Startup"
+msgstr "Startup"
+
+#: src/routes/index.tsx:101
+msgid "Subscription"
+msgstr "Subscription"
+
+#: src/routes/index.tsx:290
+msgid "Subscription costs increased by 18% this month. Consider auditing unused SaaS licenses."
+msgstr "Is mahine subscription lagat 18% barh gai hai. Ghair istemal shuda SaaS licenses ka audit karne par ghour karein."
+
+#: src/routes/index.tsx:226
+msgid "Table cell"
+msgstr "Table cell"
+
+#: src/routes/index.tsx:68
+msgid "This quarter"
+msgstr "Is seh mahi"
+
+#: src/routes/index.tsx:51
+msgid "Total Sales & Cost"
+msgstr "Kul farokht aur lagat"
+
+#: src/components/data/sidebar-data.ts:110
+msgid "Unauthorized"
+msgstr "Unauthorized"
+
+#: src/components/data/sidebar-data.ts:70
+msgid "Vendors"
+msgstr "Vendors"
+
+#: src/routes/index.tsx:213
+msgid "View all"
+msgstr "Tamam dekhein"
+
+#: src/routes/index.tsx:77
+msgid "vs last quarter"
+msgstr "bamuqabla guzishta seh mahi"
+
+#: src/routes/index.tsx:92
+msgid "vs prev. 30 days"
+msgstr "bamuqabla guzishta 30 din"
+
+#: src/routes/index.tsx:62
+msgid "vs prev. 60 days"
+msgstr "bamuqabla guzishta 60 din"
+
+#: src/routes/index.tsx:312
+msgid "You are on track to exceed Q4 targets by 6.2% if current spending holds."
+msgstr "Agar mojooda kharch isi tarah raha to aap Q4 ke hadaf se 6.2% zyada hasil karne ki raah par hain."
