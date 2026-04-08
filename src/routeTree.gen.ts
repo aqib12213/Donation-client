@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AuthenticatedIndexRouteImport } from './routes/_authenticated/index'
-import { Route as AuthenticatedDrizzleRouteImport } from './routes/_authenticated/drizzle'
+import { Route as AuthenticatedTodoRouteImport } from './routes/_authenticated/todo'
 import { Route as errors503RouteImport } from './routes/(errors)/503'
 import { Route as errors500RouteImport } from './routes/(errors)/500'
 import { Route as errors404RouteImport } from './routes/(errors)/404'
@@ -33,9 +33,9 @@ const AuthenticatedIndexRoute = AuthenticatedIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
-const AuthenticatedDrizzleRoute = AuthenticatedDrizzleRouteImport.update({
-  id: '/drizzle',
-  path: '/drizzle',
+const AuthenticatedTodoRoute = AuthenticatedTodoRouteImport.update({
+  id: '/todo',
+  path: '/todo',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const errors503Route = errors503RouteImport.update({
@@ -107,7 +107,7 @@ export interface FileRoutesByFullPath {
   '/404': typeof errors404Route
   '/500': typeof errors500Route
   '/503': typeof errors503Route
-  '/drizzle': typeof AuthenticatedDrizzleRoute
+  '/todo': typeof AuthenticatedTodoRoute
   '/errors/$error': typeof AuthenticatedErrorsErrorRoute
 }
 export interface FileRoutesByTo {
@@ -121,7 +121,7 @@ export interface FileRoutesByTo {
   '/404': typeof errors404Route
   '/500': typeof errors500Route
   '/503': typeof errors503Route
-  '/drizzle': typeof AuthenticatedDrizzleRoute
+  '/todo': typeof AuthenticatedTodoRoute
   '/': typeof AuthenticatedIndexRoute
   '/errors/$error': typeof AuthenticatedErrorsErrorRoute
 }
@@ -138,7 +138,7 @@ export interface FileRoutesById {
   '/(errors)/404': typeof errors404Route
   '/(errors)/500': typeof errors500Route
   '/(errors)/503': typeof errors503Route
-  '/_authenticated/drizzle': typeof AuthenticatedDrizzleRoute
+  '/_authenticated/todo': typeof AuthenticatedTodoRoute
   '/_authenticated/': typeof AuthenticatedIndexRoute
   '/_authenticated/errors/$error': typeof AuthenticatedErrorsErrorRoute
 }
@@ -156,7 +156,7 @@ export interface FileRouteTypes {
     | '/404'
     | '/500'
     | '/503'
-    | '/drizzle'
+    | '/todo'
     | '/errors/$error'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -170,7 +170,7 @@ export interface FileRouteTypes {
     | '/404'
     | '/500'
     | '/503'
-    | '/drizzle'
+    | '/todo'
     | '/'
     | '/errors/$error'
   id:
@@ -186,7 +186,7 @@ export interface FileRouteTypes {
     | '/(errors)/404'
     | '/(errors)/500'
     | '/(errors)/503'
-    | '/_authenticated/drizzle'
+    | '/_authenticated/todo'
     | '/_authenticated/'
     | '/_authenticated/errors/$error'
   fileRoutesById: FileRoutesById
@@ -221,11 +221,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedIndexRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/drizzle': {
-      id: '/_authenticated/drizzle'
-      path: '/drizzle'
-      fullPath: '/drizzle'
-      preLoaderRoute: typeof AuthenticatedDrizzleRouteImport
+    '/_authenticated/todo': {
+      id: '/_authenticated/todo'
+      path: '/todo'
+      fullPath: '/todo'
+      preLoaderRoute: typeof AuthenticatedTodoRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/(errors)/503': {
@@ -309,13 +309,13 @@ declare module '@tanstack/react-router' {
 }
 
 interface AuthenticatedRouteRouteChildren {
-  AuthenticatedDrizzleRoute: typeof AuthenticatedDrizzleRoute
+  AuthenticatedTodoRoute: typeof AuthenticatedTodoRoute
   AuthenticatedIndexRoute: typeof AuthenticatedIndexRoute
   AuthenticatedErrorsErrorRoute: typeof AuthenticatedErrorsErrorRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
-  AuthenticatedDrizzleRoute: AuthenticatedDrizzleRoute,
+  AuthenticatedTodoRoute: AuthenticatedTodoRoute,
   AuthenticatedIndexRoute: AuthenticatedIndexRoute,
   AuthenticatedErrorsErrorRoute: AuthenticatedErrorsErrorRoute,
 }

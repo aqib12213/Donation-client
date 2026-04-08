@@ -3,7 +3,6 @@ import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
 import "../styles.css";
-import { DbProvider } from "@/components/context/db-provider";
 import PWABadge from "@/components/pwa-badg";
 import { Toaster } from "@/components/ui/sonner";
 import { GeneralError } from "@/features/errors/general-error";
@@ -17,7 +16,7 @@ export const Route = createRootRoute({
 
 function RootComponent() {
 	return (
-		<DbProvider>
+		<>
 			<Outlet />
 			<Toaster position="top-center" />
 			<PWABadge />
@@ -32,6 +31,6 @@ function RootComponent() {
 					},
 				]}
 			/>
-		</DbProvider>
+		</>
 	);
 }

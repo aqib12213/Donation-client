@@ -8,6 +8,7 @@ import {
 	FileX,
 	GalleryVerticalEnd,
 	LayoutDashboard,
+	ListTodo,
 	Lock,
 	Monitor,
 	Palette,
@@ -54,6 +55,11 @@ export const getSidebarData = (): SidebarData => ({
 					title: t`Dashboard`,
 					url: "/",
 					icon: LayoutDashboard,
+				},
+				{
+					title: t`Todo`,
+					url: "/todo",
+					icon: ListTodo,
 				},
 				{
 					title: t`Items`,

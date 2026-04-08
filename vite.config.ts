@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 import { devtools } from "@tanstack/devtools-vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import viteReact from "@vitejs/plugin-react";
-import sqlocal from "sqlocal/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -11,16 +10,13 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vite.dev/config/
 // Constants to satisfy lint rules
 
-const WASM_REGEX = /.*\.wasm$/;
-const DATA_SQL_REGEX = /.*\.(data|sql)$/;
-
 const config = defineConfig({
-	optimizeDeps: {
-		exclude: ["sqlocal"],
-	},
-	assetsInclude: ["**/*.sqlite", "**/*.wasm"],
+	// optimizeDeps: {
+	// 	exclude: ["sqlocal"],
+	// },
+	// assetsInclude: ["**/*.sqlite", "**/*.wasm"],
 	plugins: [
-		sqlocal(),
+		// sqlocal(),
 		lingui(),
 		devtools(),
 		tsconfigPaths({ projects: ["./tsconfig.json"] }),
@@ -58,20 +54,20 @@ const config = defineConfig({
 				sourcemap: true,
 
 				runtimeCaching: [
-					{
-						urlPattern: WASM_REGEX,
-						handler: "CacheFirst",
-						options: {
-							cacheName: "wasm-cache",
-						},
-					},
-					{
-						urlPattern: DATA_SQL_REGEX,
-						handler: "CacheFirst",
-						options: {
-							cacheName: "pglite-data-cache",
-						},
-					},
+					// {
+					// 	urlPattern: WASM_REGEX,
+					// 	handler: "CacheFirst",
+					// 	options: {
+					// 		cacheName: "wasm-cache",
+					// 	},
+					// },
+					// {
+					// 	urlPattern: DATA_SQL_REGEX,
+					// 	handler: "CacheFirst",
+					// 	options: {
+					// 		cacheName: "pglite-data-cache",
+					// 	},
+					// },
 				],
 			},
 

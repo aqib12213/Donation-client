@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-492846cb'], (function (workbox) { 'use strict';
+define(['./workbox-5119daf5'], (function (workbox) { 'use strict';
 
   self.addEventListener('message', event => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -86,20 +86,12 @@ define(['./workbox-492846cb'], (function (workbox) { 'use strict';
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   }, {
     "url": "index.html",
-    "revision": "0.a7vg08gvib"
+    "revision": "0.33n9m92t168"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
     allowlist: [/^\/$/]
   }));
-  workbox.registerRoute(/.*\.wasm$/, new workbox.CacheFirst({
-    "cacheName": "wasm-cache",
-    plugins: []
-  }), 'GET');
-  workbox.registerRoute(/.*\.(data|sql)$/, new workbox.CacheFirst({
-    "cacheName": "pglite-data-cache",
-    plugins: []
-  }), 'GET');
 
 }));
 //# sourceMappingURL=sw.js.map
