@@ -1,5 +1,5 @@
 {
-  "name": "PWA-APP",
+  "name": "DONATIONS-CLIENT",
   "private": true,
   "type": "module",
   "imports": {
@@ -10,10 +10,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "db:generate": "drizzle-kit generate",
-    "db:build-client-migrations": "tsx scripts/build-client-migrations.ts && biome format src/db/migrations/client/index.ts --write",
-    "db:prepare": "pnpm db:generate && pnpm db:build-client-migrations",
-    "db:push": "drizzle-kit push",
     "format": "biome format",
     "lint": "biome lint",
     "check": "ultracite check",
@@ -93,6 +89,7 @@
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.5",
     "workbox-core": "^7.4.0",
+    "workbox-precaching": "^7.4.0",
     "workbox-window": "^7.4.0"
   },
   "pnpm": {

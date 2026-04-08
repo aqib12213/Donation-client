@@ -50,14 +50,14 @@ export function SignIn2() {
 				)}
 			>
 				<img
-					alt="PWA-APP"
+					alt="DONATIONS-CLIENT"
 					className="dark:hidden"
 					height={1151}
 					src={dashboardLight}
 					width={1024}
 				/>
 				<img
-					alt="PWA-APP"
+					alt="DONATIONS-CLIENT"
 					className="hidden dark:block"
 					height={1138}
 					src={dashboardDark}

@@ -13,27 +13,63 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/data/sidebar-data.ts:151
+#: src/routes/_authenticated/todo.tsx:115
+msgid "{activeCount} active"
+msgstr "{activeCount} active"
+
+#: src/routes/_authenticated/todo.tsx:118
+msgid "{completedCount} completed"
+msgstr "{completedCount} completed"
+
+#: src/components/data/sidebar-data.ts:156
 msgid "Account"
 msgstr "Account"
 
-#: src/routes/index.tsx:233
+#: src/routes/_authenticated/index.tsx:229
 msgid "Actions"
 msgstr "Actions"
 
-#: src/components/data/sidebar-data.ts:156
+#: src/routes/_authenticated/todo.tsx:151
+msgid "Active"
+msgstr "Active"
+
+#: src/routes/_authenticated/todo.tsx:111
+msgid "Add a task"
+msgstr "Add a task"
+
+#: src/routes/_authenticated/todo.tsx:137
+msgid "Add task"
+msgstr "Add task"
+
+#: src/routes/_authenticated/todo.tsx:181
+msgid "Add your first task to start tracking your work."
+msgstr "Add your first task to start tracking your work."
+
+#: src/routes/_authenticated/todo.tsx:148
+msgid "All"
+msgstr "All"
+
+#: src/components/data/sidebar-data.ts:161
 msgid "Appearance"
 msgstr "Appearance"
 
-#: src/components/data/sidebar-data.ts:80
+#: src/components/data/sidebar-data.ts:85
 msgid "Auth"
 msgstr "Auth"
 
-#: src/routes/index.tsx:82
+#: src/routes/_authenticated/index.tsx:80
 msgid "Churn Rate"
 msgstr "Churn Rate"
 
-#: src/routes/index.tsx:100
+#: src/routes/_authenticated/todo.tsx:167
+msgid "Clear completed"
+msgstr "Clear completed"
+
+#: src/routes/_authenticated/todo.tsx:154
+msgid "Completed"
+msgstr "Completed"
+
+#: src/routes/_authenticated/index.tsx:98
 msgid "Contractor Name"
 msgstr "Contractor Name"
 
@@ -41,25 +77,33 @@ msgstr "Contractor Name"
 #~ msgid "Currencies"
 #~ msgstr "Currencies"
 
-#: src/components/data/sidebar-data.ts:65
+#: src/components/data/sidebar-data.ts:70
 msgid "Customers"
 msgstr "Customers"
 
 #: src/components/data/sidebar-data.ts:55
-#: src/routes/index.tsx:114
+#: src/routes/_authenticated/index.tsx:110
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: src/components/data/sidebar-data.ts:166
+#: src/routes/_authenticated/todo.tsx:216
+msgid "Delete task"
+msgstr "Delete task"
+
+#: src/routes/_authenticated/todo.tsx:98
+msgid "Dexie Todo App"
+msgstr "Dexie Todo App"
+
+#: src/components/data/sidebar-data.ts:171
 msgid "Display"
 msgstr "Display"
 
-#: src/routes/index.tsx:102
-#: src/routes/index.tsx:229
+#: src/routes/_authenticated/index.tsx:100
+#: src/routes/_authenticated/index.tsx:225
 msgid "Edit"
 msgstr "Edit"
 
-#: src/routes/index.tsx:286
+#: src/routes/_authenticated/index.tsx:278
 msgid "Efficiency Alert"
 msgstr "Efficiency Alert"
 
@@ -67,19 +111,19 @@ msgstr "Efficiency Alert"
 msgid "Enterprise"
 msgstr "Enterprise"
 
-#: src/components/data/sidebar-data.ts:106
+#: src/components/data/sidebar-data.ts:111
 msgid "Errors"
 msgstr "Errors"
 
-#: src/routes/index.tsx:149
+#: src/routes/_authenticated/index.tsx:145
 msgid "Financial overview for the current fiscal period."
 msgstr "Financial overview for the current fiscal period."
 
-#: src/components/data/sidebar-data.ts:115
+#: src/components/data/sidebar-data.ts:120
 msgid "Forbidden"
 msgstr "Forbidden"
 
-#: src/components/data/sidebar-data.ts:96
+#: src/components/data/sidebar-data.ts:101
 msgid "Forgot Password"
 msgstr "Forgot Password"
 
@@ -87,7 +131,8 @@ msgstr "Forgot Password"
 msgid "General"
 msgstr "General"
 
-#: src/components/data/sidebar-data.ts:173
+#: src/components/app-sidebar.tsx:41
+#: src/components/app-sidebar.tsx:44
 msgid "Help Center"
 msgstr "Help Center"
 
@@ -95,76 +140,80 @@ msgstr "Help Center"
 #~ msgid "Home"
 #~ msgstr "Home"
 
-#: src/routes/index.tsx:277
+#: src/routes/_authenticated/index.tsx:269
 msgid "Insights"
 msgstr "Insights"
 
-#: src/components/data/sidebar-data.ts:125
+#: src/components/data/sidebar-data.ts:130
 msgid "Internal Server Error"
 msgstr "Internal Server Error"
 
-#: src/components/data/sidebar-data.ts:60
+#: src/components/data/sidebar-data.ts:65
 msgid "Items"
 msgstr "Items"
 
-#: src/routes/index.tsx:83
+#: src/routes/_authenticated/index.tsx:81
 msgid "Last 30 days"
 msgstr "Last 30 days"
 
-#: src/routes/index.tsx:52
+#: src/routes/_authenticated/index.tsx:50
 msgid "Last 60 days"
 msgstr "Last 60 days"
 
-#: src/components/data/sidebar-data.ts:130
+#: src/components/data/sidebar-data.ts:135
 msgid "Maintenance Error"
 msgstr "Maintenance Error"
 
-#: src/routes/index.tsx:223
+#: src/routes/_authenticated/index.tsx:219
 msgid "Name"
 msgstr "Name"
 
-#: src/routes/index.tsx:67
+#: src/routes/_authenticated/index.tsx:65
 msgid "New Customers"
 msgstr "New Customers"
 
-#: src/components/data/sidebar-data.ts:120
+#: src/routes/_authenticated/todo.tsx:178
+msgid "No tasks yet"
+msgstr "No tasks yet"
+
+#: src/components/data/sidebar-data.ts:125
 msgid "Not Found"
 msgstr "Not Found"
 
-#: src/components/data/sidebar-data.ts:161
-#: src/routes/index.tsx:133
+#: src/components/data/sidebar-data.ts:166
+#: src/routes/_authenticated/index.tsx:129
 msgid "Notifications"
 msgstr "Notifications"
 
-#: src/components/data/sidebar-data.ts:139
+#: src/components/data/sidebar-data.ts:144
 msgid "Other"
 msgstr "Other"
 
-#: src/components/data/sidebar-data.ts:100
+#: src/components/data/sidebar-data.ts:105
 msgid "OTP"
 msgstr "OTP"
 
-#: src/components/data/sidebar-data.ts:77
+#: src/components/data/sidebar-data.ts:82
 msgid "Pages"
 msgstr "Pages"
 
-#: src/components/data/sidebar-data.ts:146
+#: src/components/data/sidebar-data.ts:151
 msgid "Profile"
 msgstr "Profile"
 
-#: src/routes/index.tsx:300
+#: src/routes/_authenticated/index.tsx:292
 msgid "Projected Growth"
 msgstr "Projected Growth"
 
-#: src/routes/index.tsx:206
+#: src/routes/_authenticated/index.tsx:202
 msgid "Recent Transactions"
 msgstr "Recent Transactions"
 
-#: src/routes/index.tsx:124
+#: src/routes/_authenticated/index.tsx:120
 msgid "Search"
 msgstr "Search"
 
-#: src/routes/index.tsx:126
+#: src/routes/_authenticated/index.tsx:122
 msgid "Search for something..."
 msgstr "Search for something..."
 
@@ -172,19 +221,19 @@ msgstr "Search for something..."
 #~ msgid "Seed Data"
 #~ msgstr "Seed Data"
 
-#: src/components/data/sidebar-data.ts:142
+#: src/components/data/sidebar-data.ts:147
 msgid "Settings"
 msgstr "Settings"
 
-#: src/components/data/sidebar-data.ts:84
+#: src/components/data/sidebar-data.ts:89
 msgid "Sign In"
 msgstr "Sign In"
 
-#: src/components/data/sidebar-data.ts:88
+#: src/components/data/sidebar-data.ts:93
 msgid "Sign In (2 Col)"
 msgstr "Sign In (2 Col)"
 
-#: src/components/data/sidebar-data.ts:92
+#: src/components/data/sidebar-data.ts:97
 msgid "Sign Up"
 msgstr "Sign Up"
 
@@ -192,50 +241,71 @@ msgstr "Sign Up"
 msgid "Startup"
 msgstr "Startup"
 
-#: src/routes/index.tsx:101
+#: src/routes/_authenticated/index.tsx:99
 msgid "Subscription"
 msgstr "Subscription"
 
-#: src/routes/index.tsx:290
+#: src/routes/_authenticated/index.tsx:282
 msgid "Subscription costs increased by 18% this month. Consider auditing unused SaaS licenses."
 msgstr "Subscription costs increased by 18% this month. Consider auditing unused SaaS licenses."
 
-#: src/routes/index.tsx:226
+#: src/routes/_authenticated/index.tsx:222
 msgid "Table cell"
 msgstr "Table cell"
 
-#: src/routes/index.tsx:68
+#: src/routes/_authenticated/todo.tsx:131
+msgid "Task title"
+msgstr "Task title"
+
+#: src/routes/_authenticated/index.tsx:66
 msgid "This quarter"
 msgstr "This quarter"
 
-#: src/routes/index.tsx:51
+#: src/components/data/sidebar-data.ts:60
+#: src/routes/_authenticated/todo.tsx:87
+msgid "Todo"
+msgstr "Todo"
+
+#: src/routes/_authenticated/todo.tsx:195
+msgid "Toggle task"
+msgstr "Toggle task"
+
+#: src/routes/_authenticated/index.tsx:49
 msgid "Total Sales & Cost"
 msgstr "Total Sales & Cost"
 
-#: src/components/data/sidebar-data.ts:110
+#: src/components/data/sidebar-data.ts:115
 msgid "Unauthorized"
 msgstr "Unauthorized"
 
-#: src/components/data/sidebar-data.ts:70
+#: src/components/data/sidebar-data.ts:75
 msgid "Vendors"
 msgstr "Vendors"
 
-#: src/routes/index.tsx:213
+#: src/routes/_authenticated/index.tsx:209
 msgid "View all"
 msgstr "View all"
 
-#: src/routes/index.tsx:77
+#: src/routes/_authenticated/index.tsx:75
 msgid "vs last quarter"
 msgstr "vs last quarter"
 
-#: src/routes/index.tsx:92
+#: src/routes/_authenticated/index.tsx:90
 msgid "vs prev. 30 days"
 msgstr "vs prev. 30 days"
 
-#: src/routes/index.tsx:62
+#: src/routes/_authenticated/index.tsx:60
 msgid "vs prev. 60 days"
 msgstr "vs prev. 60 days"
 
-#: src/routes/index.tsx:312
+#: src/routes/_authenticated/todo.tsx:133
+msgid "What needs to be done?"
+msgstr "What needs to be done?"
+
+#: src/routes/_authenticated/index.tsx:304
 msgid "You are on track to exceed Q4 targets by 6.2% if current spending holds."
 msgstr "You are on track to exceed Q4 targets by 6.2% if current spending holds."
+
+#: src/routes/_authenticated/todo.tsx:101
+msgid "Your tasks are stored locally in IndexedDB with Dexie and update live on this page."
+msgstr "Your tasks are stored locally in IndexedDB with Dexie and update live on this page."

@@ -33,6 +33,8 @@ const config = defineConfig({
 		VitePWA({
 			registerType: "prompt",
 			injectRegister: "auto",
+			srcDir: 'src',
+        	filename: 'sw.ts',
 
 			pwaAssets: {
 				disabled: false,
@@ -40,15 +42,15 @@ const config = defineConfig({
 			},
 
 			manifest: {
-				name: "PWA-APP",
-				short_name: "PWA-APP",
+				name: "DONATIONS-CLIENT",
+				short_name: "D-CLIENT",
 				description:
-					"PWA-APP is an offline-first invoicing and ledger management application designed specifically for SMEs in South Asia",
+					"DONATIONS-CLIENT is an offline-first Donation Managment app",
 				theme_color: "#fafafa",
 			},
 
 			workbox: {
-				globPatterns: ["**/*.{js,css,html,svg,png,ico,wasm,data,sql,po}"],
+				globPatterns: ["**/*.{js,css,html,svg,png,ico,data,po}"],
 				cleanupOutdatedCaches: true,
 				clientsClaim: true,
 				sourcemap: true,

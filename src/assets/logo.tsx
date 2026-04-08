@@ -7,7 +7,7 @@ export function Logo({ className, ...props }: SVGProps<SVGSVGElement>) {
 			className={cn("size-6", className)}
 			fill="none"
 			height="24"
-			id="PWA-APP-logo"
+			id="DONATIONS-CLIENT-logo"
 			stroke="currentColor"
 			strokeLinecap="round"
 			strokeLinejoin="round"
@@ -17,7 +17,7 @@ export function Logo({ className, ...props }: SVGProps<SVGSVGElement>) {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<title>PWA-APP</title>
+			<title>DONATIONS-CLIENT</title>
 			<path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
 		</svg>
 	);

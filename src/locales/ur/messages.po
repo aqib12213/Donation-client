@@ -13,27 +13,63 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/data/sidebar-data.ts:151
+#: src/routes/_authenticated/todo.tsx:115
+msgid "{activeCount} active"
+msgstr "{activeCount} فعال"
+
+#: src/routes/_authenticated/todo.tsx:118
+msgid "{completedCount} completed"
+msgstr "{completedCount} مکمل"
+
+#: src/components/data/sidebar-data.ts:156
 msgid "Account"
 msgstr "اکاؤنٹ"
 
-#: src/routes/index.tsx:233
+#: src/routes/_authenticated/index.tsx:229
 msgid "Actions"
 msgstr "کارروائیاں"
 
-#: src/components/data/sidebar-data.ts:156
+#: src/routes/_authenticated/todo.tsx:151
+msgid "Active"
+msgstr "فعال"
+
+#: src/routes/_authenticated/todo.tsx:111
+msgid "Add a task"
+msgstr "ایک کام شامل کریں"
+
+#: src/routes/_authenticated/todo.tsx:137
+msgid "Add task"
+msgstr "کام شامل کریں"
+
+#: src/routes/_authenticated/todo.tsx:181
+msgid "Add your first task to start tracking your work."
+msgstr "اپنا پہلا کام شامل کریں تاکہ اپنے کام کا ریکارڈ رکھنا شروع کریں۔"
+
+#: src/routes/_authenticated/todo.tsx:148
+msgid "All"
+msgstr "تمام"
+
+#: src/components/data/sidebar-data.ts:161
 msgid "Appearance"
 msgstr "ظاہری شکل"
 
-#: src/components/data/sidebar-data.ts:80
+#: src/components/data/sidebar-data.ts:85
 msgid "Auth"
 msgstr "تصدیق"
 
-#: src/routes/index.tsx:82
+#: src/routes/_authenticated/index.tsx:80
 msgid "Churn Rate"
 msgstr "چرن ریٹ"
 
-#: src/routes/index.tsx:100
+#: src/routes/_authenticated/todo.tsx:167
+msgid "Clear completed"
+msgstr "مکمل شدہ صاف کریں"
+
+#: src/routes/_authenticated/todo.tsx:154
+msgid "Completed"
+msgstr "مکمل شدہ"
+
+#: src/routes/_authenticated/index.tsx:98
 msgid "Contractor Name"
 msgstr "ٹھیکیدار کا نام"
 
@@ -41,25 +77,33 @@ msgstr "ٹھیکیدار کا نام"
 #~ msgid "Currencies"
 #~ msgstr "کرنسیاں"
 
-#: src/components/data/sidebar-data.ts:65
+#: src/components/data/sidebar-data.ts:70
 msgid "Customers"
 msgstr "گاہک"
 
 #: src/components/data/sidebar-data.ts:55
-#: src/routes/index.tsx:114
+#: src/routes/_authenticated/index.tsx:110
 msgid "Dashboard"
 msgstr "ڈیش بورڈ"
 
-#: src/components/data/sidebar-data.ts:166
+#: src/routes/_authenticated/todo.tsx:216
+msgid "Delete task"
+msgstr "کام حذف کریں"
+
+#: src/routes/_authenticated/todo.tsx:98
+msgid "Dexie Todo App"
+msgstr "ڈیکسی ٹوڈو ایپ"
+
+#: src/components/data/sidebar-data.ts:171
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/routes/index.tsx:102
-#: src/routes/index.tsx:229
+#: src/routes/_authenticated/index.tsx:100
+#: src/routes/_authenticated/index.tsx:225
 msgid "Edit"
 msgstr "ترمیم"
 
-#: src/routes/index.tsx:286
+#: src/routes/_authenticated/index.tsx:278
 msgid "Efficiency Alert"
 msgstr "کارکردگی کا انتباہ"
 
@@ -67,19 +111,19 @@ msgstr "کارکردگی کا انتباہ"
 msgid "Enterprise"
 msgstr "انٹرپرائز"
 
-#: src/components/data/sidebar-data.ts:106
+#: src/components/data/sidebar-data.ts:111
 msgid "Errors"
 msgstr "خرابیاں"
 
-#: src/routes/index.tsx:149
+#: src/routes/_authenticated/index.tsx:145
 msgid "Financial overview for the current fiscal period."
 msgstr "موجودہ مالیاتی سال کے لیے مالیاتی جائزہ۔"
 
-#: src/components/data/sidebar-data.ts:115
+#: src/components/data/sidebar-data.ts:120
 msgid "Forbidden"
 msgstr "ممنوع"
 
-#: src/components/data/sidebar-data.ts:96
+#: src/components/data/sidebar-data.ts:101
 msgid "Forgot Password"
 msgstr "پاس ورڈ بھول گئے"
 
@@ -87,7 +131,8 @@ msgstr "پاس ورڈ بھول گئے"
 msgid "General"
 msgstr "عمومی"
 
-#: src/components/data/sidebar-data.ts:173
+#: src/components/app-sidebar.tsx:41
+#: src/components/app-sidebar.tsx:44
 msgid "Help Center"
 msgstr "مرکزِ مدد"
 
@@ -95,76 +140,80 @@ msgstr "مرکزِ مدد"
 #~ msgid "Home"
 #~ msgstr "ہوم"
 
-#: src/routes/index.tsx:277
+#: src/routes/_authenticated/index.tsx:269
 msgid "Insights"
 msgstr "بصیرتیں"
 
-#: src/components/data/sidebar-data.ts:125
+#: src/components/data/sidebar-data.ts:130
 msgid "Internal Server Error"
 msgstr "اندرونی سرور خرابی"
 
-#: src/components/data/sidebar-data.ts:60
+#: src/components/data/sidebar-data.ts:65
 msgid "Items"
 msgstr "اشیاء"
 
-#: src/routes/index.tsx:83
+#: src/routes/_authenticated/index.tsx:81
 msgid "Last 30 days"
 msgstr "گزشتہ 30 دن"
 
-#: src/routes/index.tsx:52
+#: src/routes/_authenticated/index.tsx:50
 msgid "Last 60 days"
 msgstr "گزشتہ 60 دن"
 
-#: src/components/data/sidebar-data.ts:130
+#: src/components/data/sidebar-data.ts:135
 msgid "Maintenance Error"
 msgstr "دیکھ بھال کی خرابی"
 
-#: src/routes/index.tsx:223
+#: src/routes/_authenticated/index.tsx:219
 msgid "Name"
 msgstr "نام"
 
-#: src/routes/index.tsx:67
+#: src/routes/_authenticated/index.tsx:65
 msgid "New Customers"
 msgstr "نئے گاہک"
 
-#: src/components/data/sidebar-data.ts:120
+#: src/routes/_authenticated/todo.tsx:178
+msgid "No tasks yet"
+msgstr "ابھی تک کوئی کام نہیں"
+
+#: src/components/data/sidebar-data.ts:125
 msgid "Not Found"
 msgstr "نہیں ملا"
 
-#: src/components/data/sidebar-data.ts:161
-#: src/routes/index.tsx:133
+#: src/components/data/sidebar-data.ts:166
+#: src/routes/_authenticated/index.tsx:129
 msgid "Notifications"
 msgstr "اطلاعات"
 
-#: src/components/data/sidebar-data.ts:139
+#: src/components/data/sidebar-data.ts:144
 msgid "Other"
 msgstr "دیگر"
 
-#: src/components/data/sidebar-data.ts:100
+#: src/components/data/sidebar-data.ts:105
 msgid "OTP"
 msgstr "او ٹی پی"
 
-#: src/components/data/sidebar-data.ts:77
+#: src/components/data/sidebar-data.ts:82
 msgid "Pages"
 msgstr "صفحات"
 
-#: src/components/data/sidebar-data.ts:146
+#: src/components/data/sidebar-data.ts:151
 msgid "Profile"
 msgstr "پروفائل"
 
-#: src/routes/index.tsx:300
+#: src/routes/_authenticated/index.tsx:292
 msgid "Projected Growth"
 msgstr "متوقع ترقی"
 
-#: src/routes/index.tsx:206
+#: src/routes/_authenticated/index.tsx:202
 msgid "Recent Transactions"
 msgstr "حالیہ لین دین"
 
-#: src/routes/index.tsx:124
+#: src/routes/_authenticated/index.tsx:120
 msgid "Search"
 msgstr "تلاش"
 
-#: src/routes/index.tsx:126
+#: src/routes/_authenticated/index.tsx:122
 msgid "Search for something..."
 msgstr "کچھ تلاش کریں..."
 
@@ -172,19 +221,19 @@ msgstr "کچھ تلاش کریں..."
 #~ msgid "Seed Data"
 #~ msgstr "نمونہ ڈیٹا"
 
-#: src/components/data/sidebar-data.ts:142
+#: src/components/data/sidebar-data.ts:147
 msgid "Settings"
 msgstr "ترتیبات"
 
-#: src/components/data/sidebar-data.ts:84
+#: src/components/data/sidebar-data.ts:89
 msgid "Sign In"
 msgstr "سائن اِن"
 
-#: src/components/data/sidebar-data.ts:88
+#: src/components/data/sidebar-data.ts:93
 msgid "Sign In (2 Col)"
 msgstr "سائن اِن (2 کالم)"
 
-#: src/components/data/sidebar-data.ts:92
+#: src/components/data/sidebar-data.ts:97
 msgid "Sign Up"
 msgstr "سائن اَپ"
 
@@ -192,50 +241,71 @@ msgstr "سائن اَپ"
 msgid "Startup"
 msgstr "اسٹارٹ اَپ"
 
-#: src/routes/index.tsx:101
+#: src/routes/_authenticated/index.tsx:99
 msgid "Subscription"
 msgstr "سبسکرپشن"
 
-#: src/routes/index.tsx:290
+#: src/routes/_authenticated/index.tsx:282
 msgid "Subscription costs increased by 18% this month. Consider auditing unused SaaS licenses."
 msgstr "اس ماہ سبسکرپشن اخراجات میں 18% اضافہ ہوا ہے۔ غیر استعمال شدہ SaaS لائسنسز کا آڈٹ کرنے پر غور کریں۔"
 
-#: src/routes/index.tsx:226
+#: src/routes/_authenticated/index.tsx:222
 msgid "Table cell"
 msgstr "ٹیبل خانہ"
 
-#: src/routes/index.tsx:68
+#: src/routes/_authenticated/todo.tsx:131
+msgid "Task title"
+msgstr "کام کا عنوان"
+
+#: src/routes/_authenticated/index.tsx:66
 msgid "This quarter"
 msgstr "اس سہ ماہی"
 
-#: src/routes/index.tsx:51
+#: src/components/data/sidebar-data.ts:60
+#: src/routes/_authenticated/todo.tsx:87
+msgid "Todo"
+msgstr "ٹوڈو"
+
+#: src/routes/_authenticated/todo.tsx:195
+msgid "Toggle task"
+msgstr "کام کی حالت تبدیل کریں"
+
+#: src/routes/_authenticated/index.tsx:49
 msgid "Total Sales & Cost"
 msgstr "کل فروخت اور لاگت"
 
-#: src/components/data/sidebar-data.ts:110
+#: src/components/data/sidebar-data.ts:115
 msgid "Unauthorized"
 msgstr "غیر مجاز"
 
-#: src/components/data/sidebar-data.ts:70
+#: src/components/data/sidebar-data.ts:75
 msgid "Vendors"
 msgstr "فراہم کنندگان"
 
-#: src/routes/index.tsx:213
+#: src/routes/_authenticated/index.tsx:209
 msgid "View all"
 msgstr "تمام دیکھیں"
 
-#: src/routes/index.tsx:77
+#: src/routes/_authenticated/index.tsx:75
 msgid "vs last quarter"
 msgstr "بمقابلہ گزشتہ سہ ماہی"
 
-#: src/routes/index.tsx:92
+#: src/routes/_authenticated/index.tsx:90
 msgid "vs prev. 30 days"
 msgstr "بمقابلہ گزشتہ 30 دن"
 
-#: src/routes/index.tsx:62
+#: src/routes/_authenticated/index.tsx:60
 msgid "vs prev. 60 days"
 msgstr "بمقابلہ گزشتہ 60 دن"
 
-#: src/routes/index.tsx:312
+#: src/routes/_authenticated/todo.tsx:133
+msgid "What needs to be done?"
+msgstr "کیا کرنا ہے؟"
+
+#: src/routes/_authenticated/index.tsx:304
 msgid "You are on track to exceed Q4 targets by 6.2% if current spending holds."
 msgstr "اگر موجودہ اخراجات برقرار رہے تو آپ Q4 اہداف سے 6.2% زیادہ حاصل کرنے کی راہ پر ہیں۔"
+
+#: src/routes/_authenticated/todo.tsx:101
+msgid "Your tasks are stored locally in IndexedDB with Dexie and update live on this page."
+msgstr "آپ کے کام Dexie کے ساتھ IndexedDB میں مقامی طور پر محفوظ ہوتے ہیں اور اس صفحے پر براہِ راست اپ ڈیٹ ہوتے ہیں۔"
