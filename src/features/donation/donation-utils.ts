@@ -76,7 +76,7 @@ export const formatMoney = (amountCents: number, currency: string): string => {
 export const getEmptyDraft = (): DonationDraft => ({
 	donorName: "",
 	amount: "",
-	currency: "USD",
+	currency: "PKR",
 	donatedOn: getDefaultDateInputValue(),
 	category: "",
 	paymentMethod: "",
