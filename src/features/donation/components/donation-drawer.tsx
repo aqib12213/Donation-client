@@ -135,9 +135,7 @@ export function DonationDrawer(props: {
     return (
         <Drawer
             direction={isMobile ? "bottom" : "right"}
-            dismissible={true}
-            handleOnly={isMobile}
-            modal={isMobile}
+            modal={false}
             onOpenChange={onOpenChange}
             open={open}
         >

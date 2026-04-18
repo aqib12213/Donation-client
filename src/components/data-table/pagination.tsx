@@ -1,5 +1,10 @@
-
 import type { Table } from "@tanstack/react-table";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -9,7 +14,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn, getPageNumbers } from "@/lib/utils";
-import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 
 const PAGE_SIZE_OPTIONS = [10, 20, 30, 40, 50] as const;
 
@@ -36,11 +40,10 @@ export function DataTablePagination<TData>({
   return (
     <div
       className={cn(
-        "flex items-center justify-between overflow-clip px-2",
+        "flex flex-col items-center justify-between gap-3 overflow-clip px-2 sm:flex-row",
         "@max-2xl/content:flex-col-reverse @max-2xl/content:gap-4",
         className
       )}
-      style={{ overflowClipMargin: 1 }}
     >
       <div className="flex w-full items-center justify-between">
         <div className="flex @2xl/content:hidden w-[100px] items-center justify-center font-medium text-sm">
@@ -53,10 +56,10 @@ export function DataTablePagination<TData>({
             }}
             value={`${table.getState().pagination.pageSize}`}
           >
-            <SelectTrigger className="h-8 w-[70px]">
+            <SelectTrigger className="h-8 w-17.5">
               <SelectValue placeholder={table.getState().pagination.pageSize} />
             </SelectTrigger>
-            <SelectContent side="top">
+            <SelectContent alignItemWithTrigger>
               {PAGE_SIZE_OPTIONS.map((pageSizeOption) => (
                 <SelectItem key={pageSizeOption} value={`${pageSizeOption}`}>
                   {pageSizeOption}
